@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ocr-converter"
+version = "0.1.0"
+description = "Clean, practical CLI to OCR one or many documents at once (PDFs or images) using ocrmypdf."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Amer Alkojjeh" }]
+dependencies = [
+    "tqdm>=4.66.0",
+]
+
+[project.scripts]
+ocrc = "ocr_converter.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["ocr_converter*"]

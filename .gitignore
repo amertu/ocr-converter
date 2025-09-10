@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+.dist/
+.build/
+dist/
+docs/
+build/
+.venv/
+.env/
+out/
+ocr_log.csv
